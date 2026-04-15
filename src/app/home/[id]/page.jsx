@@ -76,7 +76,7 @@ const FriendDetailsPage = async ({ params }) => {
 
                     <div className="bg-white rounded-2xl shadow-sm p-4 flex justify-between items-center">
                         <div>
-                            <p className="font-medium">Relationship Goal</p>
+                            <p className="font-medium text-[#244D3F]">Relationship Goal</p>
                             <p className="text-sm text-gray-500">
                                 Connect every <b>30 days</b>
                             </p>

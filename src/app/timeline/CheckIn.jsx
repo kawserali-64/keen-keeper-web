@@ -42,7 +42,7 @@ const CheckIn = ({ friend }) => {
 
     return (
         <div className="bg-white rounded-2xl shadow-sm p-4">
-            <p className="font-medium mb-3">Quick Check-In</p>
+            <p className="font-medium mb-3 text-[#244D3F]">Quick Check-In</p>
 
             <div className="grid grid-cols-3 gap-4">
 
