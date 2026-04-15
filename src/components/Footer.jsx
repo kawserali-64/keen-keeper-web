@@ -34,6 +34,8 @@ const FooterPage = () => {
                     </div>
                 </nav>
 
+        <div className="w-full h-[1px] bg-gray-300"></div>
+
                 <aside className="w-full mt-6">
                     <div className="flex flex-col md:flex-row justify-between items-center w-full text-[#FAFAFA] gap-3">
 
