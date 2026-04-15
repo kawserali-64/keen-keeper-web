@@ -48,7 +48,7 @@ const CheckIn = ({ friend }) => {
 
                 <button
                     onClick={() => handleAdd("Call")}
-                    className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-black hover:text-white transition"
+                    className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-[#244D3F] hover:text-white transition"
                 >
                     <Phone size={18} />
                     Call
@@ -56,7 +56,7 @@ const CheckIn = ({ friend }) => {
 
                 <button
                     onClick={() => handleAdd("Text")}
-                    className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-black hover:text-white transition"
+                    className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-[#244D3F] hover:text-white transition"
                 >
                     <MessageSquareReply size={18} />
                     Text
@@ -64,7 +64,7 @@ const CheckIn = ({ friend }) => {
 
                 <button
                     onClick={() => handleAdd("Video")}
-                    className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-black hover:text-white transition"
+                    className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-[#244D3F] hover:text-white transition"
                 >
                     <Video size={18} />
                     Video
