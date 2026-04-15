@@ -22,7 +22,7 @@ const FriendDetailsPage = async ({ params }) => {
     return (
         <div className=" bg-[#F8FAFC] pt-20 pb-5">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-5xl container mx-auto items-center justify-center">
-                <div className="bg-white rounded-2xl shadow-sm p-6 text-center space-y-3 flex flex-col items-center">
+                <div className="ml-4 bg-white rounded-2xl shadow-sm p-6 text-center space-y-3 flex flex-col items-center">
                     <Image
                         src={friendInfo.picture}
                         alt={friendInfo.name}
