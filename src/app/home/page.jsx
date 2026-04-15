@@ -21,7 +21,10 @@ const FriendsList = async () => {
             <div className='mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto'>
                 {friends.map(friend => (
                     <Link key={friend.id} href={`/home/${friend.id}`}>
-                        <div className="card bg-white shadow-md rounded-lg p-4 mb-4 cursor-pointer">
+                        <div className="card bg-white shadow-md rounded-lg p-4 mb-4 cursor-pointer 
+                            transition-all duration-300 ease-in-out 
+                            hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] 
+                          hover:bg-gray-50">
                             <figure className="px-10 pt-10">
                                 <Image
                                     src={friend.picture}

@@ -23,19 +23,19 @@ export default function Home() {
 
         {/* card */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 container mx-auto">
-          <div className="card-body bg-[#FFFFFF] rounded-2xl items-center text-center">
+          <div className="card-body bg-[#FFFFFF] rounded-2xl items-center text-center hover:bg-[#244D3F] hover:text-white transition cursor-pointer">
             <h2 className="card-title font-bold text-2xl">10</h2>
             <p className="text-[#64748B]">Total Friends</p>
           </div>
-          <div className="card-body bg-[#FFFFFF] rounded-2xl items-center text-center">
+          <div className="card-body bg-[#FFFFFF] rounded-2xl items-center text-center hover:bg-[#244D3F] hover:text-white transition cursor-pointer">
             <h2 className="card-title font-bold text-2xl ">3</h2>
             <p className="text-[#64748B]">On Track</p>
           </div>
-          <div className="card-body  bg-[#FFFFFF] rounded-2xl items-center text-center">
+          <div className="card-body  bg-[#FFFFFF] rounded-2xl items-center text-center hover:bg-[#244D3F] hover:text-white transition cursor-pointer">
             <h2 className="card-title font-bold text-2xl">6</h2>
             <p className="text-[#64748B]">Need Attention</p>
           </div>
-          <div className="card-body bg-[#FFFFFF] rounded-2xl items-center text-center">
+          <div className="card-body bg-[#FFFFFF] rounded-2xl items-center text-center hover:bg-[#244D3F] hover:text-white transition cursor-pointer">
             <h2 className="card-title font-bold text-2xl">12</h2>
             <p className="text-[#64748B]">Interactions This Month</p>
           </div>
