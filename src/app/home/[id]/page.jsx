@@ -6,7 +6,7 @@ import CheckIn from "../../timeline/CheckIn";
 
 import { useTimeline } from "@/context/TimelineContext";
 const FriendDetailsPage = async ({ params }) => {
-    const res = await fetch("http://localhost:3000/data.json")
+    const res = await fetch("https://keen-keeper-web-beta.vercel.app/data.json")
     const friends = await res.json();
 
     const { id } = await params;

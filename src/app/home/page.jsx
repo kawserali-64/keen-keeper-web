@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { Suspense } from 'react';
 
 const FriendsList = async () => {
-    const res = await fetch("http://localhost:3000/data.json");
+    const res = await fetch("https://keen-keeper-web-beta.vercel.app/data.json");
     const friends = await res.json();
 
     const statusColors = {
