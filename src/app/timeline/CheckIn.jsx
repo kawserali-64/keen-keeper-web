@@ -5,7 +5,6 @@ import { useTimeline } from "@/context/TimelineContext";
 import { toast } from "react-toastify";
 
 const CheckIn = ({ friend }) => {
-
     const { addTimeline } = useTimeline();
 
     const getImage = (type) => {
@@ -13,9 +12,7 @@ const CheckIn = ({ friend }) => {
         if (type === "Text") return "/text.png";
         if (type === "Video") return "/video.png";
     };
-
     const handleAdd = (type) => {
-
         addTimeline({
             id: Date.now(),
             type,
@@ -26,7 +23,6 @@ const CheckIn = ({ friend }) => {
             actionImage: getImage(type)
         });
 
-        // 🎯 Different toast for each button
         if (type === "Call") {
             toast.success(`${friend?.name} a call with!`);
         }
@@ -53,7 +49,6 @@ const CheckIn = ({ friend }) => {
                     <Phone size={18} />
                     Call
                 </button>
-
                 <button
                     onClick={() => handleAdd("Text")}
                     className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-[#244D3F] hover:text-white transition"
@@ -61,7 +56,6 @@ const CheckIn = ({ friend }) => {
                     <MessageSquareReply size={18} />
                     Text
                 </button>
-
                 <button
                     onClick={() => handleAdd("Video")}
                     className="btn border border-black h-24 rounded-xl py-6 flex flex-col items-center justify-center gap-2 hover:bg-[#244D3F] hover:text-white transition"
@@ -69,7 +63,6 @@ const CheckIn = ({ friend }) => {
                     <Video size={18} />
                     Video
                 </button>
-
             </div>
         </div>
     );

@@ -1,4 +1,3 @@
-
 import { Archive, BellDot, MessageSquare, Phone, Trash, Video } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +10,6 @@ const FriendDetailsPage = async ({ params }) => {
 
     const { id } = await params;
     const friendInfo = friends.find(f => f.id === parseInt(id));
-
 
     const statusColors = {
         active: "badge-success",
@@ -30,15 +28,12 @@ const FriendDetailsPage = async ({ params }) => {
                         height={150}
                         className="rounded-full"
                     />
-
                     <h2 className="font-semibold text-lg">{friendInfo.name}</h2>
 
                     <div className='space-y-2'>
-
                         <div className={`badge text-white p-2 rounded-2xl ${statusColors[friendInfo.status]}`}>
                             {friendInfo.status}
                         </div>
-
                         <div>
                             {friendInfo.category.map((cat, index) => (
                                 <span key={index} className="badge badge-accent mr-2 p-2 rounded-2xl">
@@ -47,16 +42,11 @@ const FriendDetailsPage = async ({ params }) => {
                             ))}
                         </div>
                     </div>
-
                     <p className="text-sm text-gray-500 italic">Former colleague, great mentor</p>
                     <p className="text-xs text-gray-400">Preferred: email</p>
-
                     <div className="space-y-2 pt-3">
-
                         <button className="w-full btn border rounded-lg py-2 flex items-center justify-center gap-2"><BellDot /> Snooze 2 Weeks</button>
-
                         <button className="w-full btn border rounded-lg py-2 flex items-center justify-center gap-2"><Archive /> Archive</button>
-
                         <button className="w-full btn text-red-500 rounded-lg py-2 flex items-center justify-center gap-2"><Trash /> Delete</button>
                     </div>
                 </div>
@@ -73,7 +63,6 @@ const FriendDetailsPage = async ({ params }) => {
                             </div>
                         ))}
                     </div>
-
                     <div className="bg-white rounded-2xl shadow-sm p-4 flex justify-between items-center">
                         <div>
                             <p className="font-medium text-[#244D3F]">Relationship Goal</p>
@@ -83,7 +72,6 @@ const FriendDetailsPage = async ({ params }) => {
                         </div>
                         <button className="border px-3 py-1 rounded-lg text-sm">Edit</button>
                     </div>
-
                    <CheckIn friend={friendInfo}></CheckIn>
                 </div>
             </div>

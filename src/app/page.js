@@ -1,8 +1,5 @@
-
 import { Divide, Plus } from "lucide-react";
 import AllFriends from "./home/page";
-
-
 
 export default function Home() {
   return (
@@ -21,7 +18,6 @@ export default function Home() {
           </button>
         </div>
 
-        {/* card */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 container mx-auto">
           <div className="card-body bg-[#FFFFFF] rounded-2xl items-center text-center hover:bg-[#244D3F] hover:text-white transition cursor-pointer">
             <h2 className="card-title font-bold text-2xl">10</h2>
@@ -41,10 +37,8 @@ export default function Home() {
           </div>
         </div>
         <hr className="my-10 border-gray-300" />
-
       </div>
         <AllFriends />
     </>
-
   );
 }

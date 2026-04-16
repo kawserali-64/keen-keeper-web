@@ -17,7 +17,6 @@ const FriendsList = async () => {
             <h1 className='font-bold text-2xl container mx-auto'>
                 Your Friends
             </h1>
-
             <div className='mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto'>
                 {friends.map(friend => (
                     <Link key={friend.id} href={`/home/${friend.id}`}>
