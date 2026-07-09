@@ -1,3 +1,4 @@
+
 # 👥 KeenKeeper
 
 ## 🚀 Description
@@ -5,6 +6,9 @@
 KeenKeeper is a simple and user-friendly web application designed to help users manage their friendships and track interactions. It allows users to stay connected by monitoring communication and maintaining meaningful relationships.
 
 ---
+## 📸 Homepage Screenshot
+
+<img width="1917" height="933" alt="Keen Keeper Homepage" src="https://github.com/user-attachments/assets/fa79f16a-6d4a-4dc4-90e5-a724df088fa9" />
 
 ## 🛠️ Technologies Used
 
